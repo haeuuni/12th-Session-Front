@@ -1,0 +1,290 @@
+body {
+  padding: 40px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+nav {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bar_left {
+  margin-left: 50px;
+  display: flex;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 20px;
+  align-items: center;
+}
+
+.bar_right {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 50px;
+}
+
+nav .circle {
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.search_bar {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.search {
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+
+  padding: 0 20px;
+  width: 80%;
+  height: 100%;
+  font-size: 18px;
+}
+
+nav img {
+  width: 20px;
+  margin-right: 10px;
+  filter: opacity(0.5) drop-shadow(0 0 0 gray);
+}
+
+.circle_white {
+  width: 30px;
+  height: 30px;
+  border-color: gray;
+  border-radius: 50%;
+  border: 2px solid gray;
+}
+
+.section-container {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* 1. video */
+
+.video-container {
+  margin-top: 30px;
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 2. info */
+
+.info {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.info .views {
+  margin-bottom: 5%;
+}
+
+.info .tag {
+  padding-top: 10px;
+  color: blue;
+}
+
+.info .views {
+  color: gray;
+}
+
+.info ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+.info li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: gray;
+}
+
+.info ul .circle {
+  width: 30px;
+  height: 30px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.youtuber {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.youtuber_info {
+  display: flex;
+  flex-direction: row;
+}
+
+.youtuber_circle {
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.youtuber span {
+  color: gray;
+}
+
+.youtuber_subscribe {
+  border: 0px;
+  border-radius: 10px;
+  background-color: white;
+  color: red;
+  display: flex;
+  align-items: center;
+}
+
+.youtuber b {
+  cursor: pointer;
+}
+
+/* 3. comment */
+.comments-container {
+  padding: 20px;
+}
+
+.comments-container .comments {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.profile .circle {
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.content {
+  width: 100%;
+}
+
+.content span {
+  margin-left: 10px;
+  color: gray;
+}
+
+.following {
+  color: blue;
+}
+
+.likes ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+}
+
+.likes li {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  align-items: center;
+}
+
+.likes .circle {
+  width: 40px;
+  height: 40px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.likes li p {
+  margin-top: 7px;
+}
+
+/* 4. recommended */
+
+.recommended-container {
+  padding: 20px;
+}
+
+.recommend {
+  display: flex;
+  flex-direction: row;
+}
+
+.recommeded_video {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+}
+
+.recommend p {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.recommend span {
+  color: gray;
+}
+
+@media only screen and (max-width: 960px) {
+  .section-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
